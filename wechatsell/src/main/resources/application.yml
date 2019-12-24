@@ -3,7 +3,7 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: 123456
-    url: jdbc:mysql://192.168.1.172/Sell?characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://192.168.1.172:3306/Sell?characterEncoding=utf-8&useSSL=false
 
   jpa:
     show-sql: true
@@ -16,9 +16,9 @@ spring:
     port: 6379
     password: 123456
 
-#server:
-#  servlet:
-#    context-path: /sell
+server:
+  servlet:
+    context-path: /sell
 #
 #wechat:
 #  #  wxd898fcb01713c658 商户appId
