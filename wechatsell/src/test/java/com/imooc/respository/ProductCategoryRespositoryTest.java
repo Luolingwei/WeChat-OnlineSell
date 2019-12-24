@@ -21,12 +21,6 @@ public class ProductCategoryRespositoryTest {
     @Autowired
     private ProductCategoryRespository respository;
 
-//    @Test
-//    public void findOneTest(){
-//        ProductCategory productCategory = respository.findOne(1);
-//        System.out.println(productCategory.toString());
-//    }
-
     @Test
     @Transactional
     public void saveTest(){
