@@ -1,7 +1,7 @@
 package com.imooc.service.impl;
 
 import com.imooc.dataobject.ProductCategory;
-import com.imooc.respository.ProductCategoryRespository;
+import com.imooc.respository.ProductCategoryRepository;
 import com.imooc.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +12,7 @@ import java.util.List;
 public class CategoryServiceImpl implements CategoryService {
 
     @Autowired
-    private ProductCategoryRespository respository;
+    private ProductCategoryRepository respository;
 
     @Override
     public ProductCategory findOne(Integer categoryId) {

@@ -12,21 +12,32 @@ import javax.transaction.Transactional;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ProductCategoryRespositoryTest {
     @Autowired
-    private ProductCategoryRespository respository;
+    private ProductCategoryRepository respository;
 
     @Test
-    @Transactional
+    @Transactional // 测试回滚，不会对数据库产生影响
     public void saveTest(){
+        //新增测试
         ProductCategory productCategory = new ProductCategory("女生最爱",3);
         ProductCategory result=respository.save(productCategory);
         Assert.assertNotNull(result);
+
+        //修改测试1
+//        ProductCategory productCategory = new ProductCategory();
+//        productCategory.setCategoryId(2);
+//        productCategory.setCategoryName("男生最爱");
+//        productCategory.setCategoryType(3);
+//        respository.save(productCategory);
+
+        //修改测试2
+//        ProductCategory productCategory = respository.findById(1).get();
+//        productCategory.setCategoryType(10);
+//        respository.save(productCategory);
     }
 
     @Test
