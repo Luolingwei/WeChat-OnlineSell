@@ -1,12 +1,16 @@
 package com.imooc.dto;
 
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.imooc.dataobject.OrderDetail;
+import com.imooc.utils.serializer.Date2LongSerializer;
 import lombok.Data;
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.List;
 
 @Data
+// 为空的字段不会被序列化，可以在application.yml中做全局配置
+//@JsonInclude(JsonInclude.Include.NON_NULL)
 public class OrderDTO {
 
     private String orderId;
@@ -33,9 +37,11 @@ public class OrderDTO {
     private Integer payStatus;
 
     /** 订单创建时间 */
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date createTime;
 
     /** 订单更新时间 */
+    @JsonSerialize(using = Date2LongSerializer.class)
     private Date updateTime;
 
     List<OrderDetail> orderDetailList;
