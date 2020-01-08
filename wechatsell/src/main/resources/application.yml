@@ -19,12 +19,12 @@ spring:
 server:
   servlet:
     context-path: /sell
-#
-#wechat:
-#  #  wxd898fcb01713c658 商户appId
-#  #  wxcc07e1c9b0d2102b 测试号appId
-#  mpAppId: wxd898fcb01713c658
-#  mpAppSecret: 91b6e0c4015ed4794c0998a6e0463ce0
+
+wechat:
+  #  wxd898fcb01713c658 商户appId
+  #  wxcc07e1c9b0d2102b 测试号appId
+  mpAppId: wxd898fcb01713c658
+  mpAppSecret: 91b6e0c4015ed4794c0998a6e0463ce0
 #  #  开放平台的appId和appSecret
 #  openAppId: wx6ad144e54af67d87
 #  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
