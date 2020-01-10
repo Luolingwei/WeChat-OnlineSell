@@ -25,13 +25,13 @@ wechat:
   #  wxcc07e1c9b0d2102b 测试号appId
   mpAppId: wxd898fcb01713c658
   mpAppSecret: 91b6e0c4015ed4794c0998a6e0463ce0
-#  #  开放平台的appId和appSecret
-#  openAppId: wx6ad144e54af67d87
-#  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
-#  mchId: 1483469312
-#  mchKey: C5245D70627C1F8E9964D494B0735025
-#  keyPath: C:/Coding/h5.p12
-#  notifyUrl: http://sunsell.natapp1.cc/sell/pay/notify
+  #  开放平台的appId和appSecret
+  openAppId: wx6ad144e54af67d87
+  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e
+  mchId: 1483469312
+  mchKey: C5245D70627C1F8E9964D494B0735025
+  keyPath: D:/var/h5.p12
+  notifyUrl: http://sunsell.natapp1.cc/sell/pay/notify
 #  templateId:
 #    orderStatus: e-Cqq67QxD6YNI41iRiqawEYdFavW_7pc7LyEMb-yeQ
 #
